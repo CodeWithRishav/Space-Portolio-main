@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "delete-gh-pages": "git branch -d gh-pages 2>$null && git push origin --delete gh-pages 2>$null",
-    "deploy": "npm run build && npx gh-pages -b gh-pages -d .next",
+    "deploy": "npm run build && npx gh-pages -b main -d .next",
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
